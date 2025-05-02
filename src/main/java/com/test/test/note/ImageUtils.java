@@ -24,6 +24,7 @@ public class ImageUtils {
         }
         outputStream.close();
         return outputStream.toByteArray();
+        
     }
 
         public static byte[] decompressImage(byte[] data) throws DataFormatException, IOException {
@@ -41,4 +42,5 @@ public class ImageUtils {
 
         return outputStream.toByteArray();
     }
+
 }

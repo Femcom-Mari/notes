@@ -1,5 +1,7 @@
 package com.test.test.note;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -21,9 +23,6 @@ public class Note {
 
     @Column
     private String content;
-
-    @Column
-    String image = "path/to/your/image.jpg";
 
     public Note () {
 
@@ -52,12 +51,6 @@ public class Note {
     public void setContent(String content) {
         this.content = content;
     }
-        public String getImage() {
-        return this.image;
-    }
 
-    public void setImage(String image) {
-        this.image = image;
-    }
 
 }
